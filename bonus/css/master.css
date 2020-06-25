@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-color: #c0eef0;
+  padding: 15px;
+}
+
+h1{
+  display: inline-block;
+  color: darkred;
+  animation: pulse 1.5s linear infinite;
+}
+
+@keyframes pulse {
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+#print{
+  width: 60%;
+  height: 75vh;
+  margin: 30px auto 0;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#print li{
+  padding: 10px;
+  font-size: 25px;
+}
+
+.Fizz{
+  color: darkblue;
+}
+
+.Buzz{
+  color: #ccc;
+}
+
+.FizzBuzz{
+  color: darkred;
+}
+
+.Fizz:hover, .Buzz:hover, .FizzBuzz:hover{
+  animation: flip .5s;
+  cursor: crosshair;
+}
+
+@keyframes flip {
+  50% {transform: rotateY(180deg);}
+  100% {transform: rotateY(0deg);}
+}
